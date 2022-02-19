@@ -13,7 +13,10 @@
 ************************************************/
 
 function checkGrade(form) {
-  var myGrade = parseFloat(form.myText.value);
+  var myGrade = parseInt(form.myText.value);
+  while (isNaN(myGrade)) {
+    myGrade = parseFloat(prompt("Please enter a numerical grade value: ", ""));
+  }
   
 /***********************************************
   Create a while statement. In the conditional 
