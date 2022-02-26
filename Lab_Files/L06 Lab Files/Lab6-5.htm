@@ -18,7 +18,8 @@
 	  images/ciw_on.gif, images/ciw_off.gif, 
 	  images/ciw1_on.gif, images/ciw1_off.gif 
 **************************************************************/
-	
+
+
     new Image() {
 		
 	}
@@ -33,15 +34,15 @@
 	
 	function imageOn(imagename) {
 	  if (document.images) {
-	    (imagename == "ciw")  ? document.images[0].src = ciw_on.src : "";
-		(imagename == "ciw1")  ? document.images[1].src = ciw1_on.src : "";
+	    (imagename == "ciw")  ? document.images[0].src = ciw_on.src : "images/ciw_on.gif";
+		(imagename == "ciw1")  ? document.images[1].src = ciw1_on.src : "images/ciw1_on.gif";
 	  }
 	}
 	
 	function imageOff(imagename) {
 	  if (document.images) {
-	    (imagename == "ciw") ? document.images[0].src = ciw_off.src : "";
-		(imagename == "ciw1") ? document.images[1].src = ciw1_off.src : "";
+	    (imagename == "ciw") ? document.images[0].src = ciw_off.src : "images/ciw_off.gif";
+		(imagename == "ciw1") ? document.images[1].src = ciw1_off.src : "images.ciw1_off.gif";
 	  }
 	}
 	
