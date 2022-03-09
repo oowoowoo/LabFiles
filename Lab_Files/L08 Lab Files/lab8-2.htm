@@ -6,23 +6,27 @@
 
 <script type="text/javascript">   
 // create a class here
+
+var devName = "Ultra Mega Awesome Computer of Greatness"
+var devBrand = "ThinkVision"
+
 class Device {
     constructor (name, brand) {
-    this.name = name;
-    this.brand = brand;
-    this.display = display(); {return"The name of this device is " + this.name + " and its brand is " + this.brand}
+    this.devName = name;
+    this.devBrand = brand;
+    this.display = display(); {return"The name of this device is " + this.devName + " and its brand is " + this.devBrand}
     
     }
 }
 
-display(); {
-    alert("The name of this device is " + this.name + " and its brand is " + this.brand)
+function display() {
+    alert("The name of this device is " + this.devName + " and its brand is " + this.devBrand)
 }
 
 
 </script>
 </head>
-<body onload="dev1.display()">
+<body onload="display()">
 <h3>CIW JavaScript Specialist</h3>
 <hr />
 
