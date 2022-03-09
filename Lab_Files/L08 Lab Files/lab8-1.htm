@@ -19,23 +19,22 @@
   // Important - Start your array index numbers with 1
       var employees = new Array();
   employees[0] = "Select Employee";
-                               
-                               
-  
   employees[1] = new employeeObject("Mai Li", "Sales", 551);
   employees[2] = new employeeObject("Maria Alvarez", "Human Resources", 441);               
   employees[3] = new employeeObject("Tom Smith", "Marketing", 331);
 
   len = employees.length;
   
-    function showEmployee() {
+  function showEmployee() {
       var info = "";
-  // Complete the showEmployee() function
-      info += 
-    
-    
+    info += "Employee: " + this.name + "\n";
+      info += "Department: " + this.department +  "\n";
+    info += "Extension: " + this.extension + "\n";
+	    info += "Employed: " + this.employed;
       alert(info);
     }
+    
+  
 
     function showAllEmployees() {
         var info = "";
