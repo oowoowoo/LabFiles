@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <title>Lab 11-4</title>
 <script type="text/javascript">
-<!-- 
+
     var myColor = prompt("Please enter a hexadecimal color code (must be 6 characters, including 0 thru 9 and A thru F):","FFFFFF");
 	var myName = prompt("Please enter your name:","Cookie Monster");
 
@@ -13,13 +13,13 @@
      var keepCookie = (confirm("A cookie will be set. Delete cookie?")) ? "delete" : "keep";
 
     if (keepCookie == "delete") {
-        document.cookie="testCookie=" +"YColor=" + myColor + " " + "name=" + myName + ";expires=20-May-2018";
+        document.cookie="testCookie=" +"YColor=" + myColor + " " + "name=" + myName + ";expires=20-May-2022";
         message= "Here is the cookie that was deleted:  ";
         message += document.cookie;
         alert(message);
     } 
     else {
-		document.cookie="testCookie=" + "YColor=" + myColor + " " + "name=" + myName + ";expires=20-May-2018"; // the expiry date must be somewhere in the future, or the cookie will not be set in Firefox or Chrome
+		document.cookie="testCookie=" + "YColor=" + myColor + " " + "name=" + myName + ";expires=20-May-2023"; // the expiry date must be somewhere in the future, or the cookie will not be set in Firefox or Chrome
         message= "Here is the cookie that was set on your system:  ";
         message += document.cookie;
         alert(message);
@@ -36,8 +36,7 @@
 	var PersonName = document.cookie.substr(nameLengthS,25);
 	alert("Your name is: " + PersonName);
 	
-	
-//-->
+
 </script>
 </head>
 
@@ -45,7 +44,7 @@
 <h3>CIW JavaScript Specialist</h3>
 <hr />
 <script type="text/javascript">
-<!-- 
+
 
     if ((pos == null) || (pos == "")) pos = "#ffffff";
     document.bgColor = pos;
@@ -54,7 +53,7 @@
     document.write("Cookie contents: " + document.cookie);
 	document.write();
 
-//-->
+
 </script>
 </body>
 </html>
